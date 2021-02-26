@@ -1,26 +1,3 @@
-/* Color variables */
-:root {
-    --bug: #3b9950;
-    --dark: #5a5979;
-    --dragon:#61cad9;
-    --electric:#fbfb71;
-    --fairy: #ea1169;
-    --fighting:#ef6138;
-    --fire:#fd4c59;
-    --flying:#93b2c7;
-    --ghost:#906790;
-    --grass:#26cb4f;
-    --ground:#6e491f;
-    --ice:#d9eefa;
-    --normal:#c998a7;
-    --poison: #9b69d8;
-    --psychic:#f71c91;
-    --rock:#8a3d22;
-    --steel:#42bd94;
-    --water:#86a9fa;
-}
-
-/* Global Layout Set-up */
 * {
     margin: 0;
     padding: 0;
@@ -47,28 +24,33 @@ h1 {
 }
 
 .container {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    margin:1rem;
+    justify-content: space-evenly;
+    grid-gap: 1.5rem;
+}
+
+.col {
+    grid-template-columns: auto auto auto auto;
+}
+
+.pButton {
+   margin-left: 3rem;
+   margin-bottom: 5rem;
 }
 
 img {
-    width: 80%;
-    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card {
-    background-color: var(--electric);
-    margin-top: 4rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    min-width: 15%;
-    padding-bottom: 2.5em;
-    border-style:solid; 
+    padding-bottom: 2rem;
+    border-style:solid;
 }
 
 h4.pName {
-    margin-top: 1rem;
     display: float;
     float: left;
     padding-right: 2rem;
@@ -76,7 +58,6 @@ h4.pName {
 }
 
 h4.pNum {
-    margin-top: 1rem;
     display: float;
     float: right;
     padding-left: 2rem;
@@ -84,7 +65,84 @@ h4.pNum {
 }
 
 .line {
-    height: 3.5rem;
+    height: 1.75rem;
     border-bottom: .1rem solid lightgrey;
     border-bottom-width: 90%;
 }
+
+/* label {
+    margin-right: 2rem;
+} */
+
+.bug { 
+    background-color: #3b9950; 
+}
+
+.dark { 
+    background-color: #5a5979; 
+}
+
+.dragon { 
+    background-color: #61cad9; 
+}
+
+.electric  {
+    background-color: #fbfb71; 
+}
+
+.fairy { 
+    background-color: #ea1169; 
+}
+
+.fighting  {
+    background-color: #ef6138; 
+}
+
+
+.fire  {
+    background-color: #fd4c59; 
+}
+
+.flying  {
+    background-color: #93b2c7; 
+}
+
+.ghost  {
+    background-color: #906790; 
+}
+
+.grass  {
+    background-color: #26cb4f; 
+}
+
+.ground  {
+    background-color: #6e491f; 
+}
+
+.ice  {
+    background-color: #d9eefa; 
+}
+
+.normal  {
+    background-color: #c998a7; 
+}
+
+.poison { 
+    background-color: #9b69d8; 
+}
+
+.psychic  {
+    background-color: #f71c91; 
+}
+
+.rock  {
+    background-color: #8a3d22; 
+}
+
+.steel { 
+    background-color: #42bd94; 
+}
+
+.water { 
+    background-color: #86a9fa 
+};
